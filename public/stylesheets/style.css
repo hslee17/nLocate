@@ -1,0 +1,25 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#terminal {
+margin: 1em 0 0;
+padding: .25em 0;
+height: 400px;
+background: #1F140D;
+overflow: auto;
+}
+
+#terminal p, #terminal pre {
+margin: 2px;
+padding: 0 8px;
+color: #55D839;
+font-size: 85%;
+font-family: Monaco, monospace;
+color: #55D839 !important;
+}
