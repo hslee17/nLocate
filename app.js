@@ -40,7 +40,7 @@ app.configure('production', function(){
 
 app.get('/', function(req, res){
   res.render('index', {
-    title: 'nLocate'
+    title: 'stackmapr'
   });
 });
 
@@ -55,7 +55,6 @@ var agent = io
   .on('connection', function(socket) {
     console.log('agent connected');
 
-  //we got data back from the agent. TODO - display
   socket.on('result', function(data) {
 	  console.log('got result. forwarding to user');
 	  user.emit('result', data);
